@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.gradient_bg {
+  /* background: radial-gradient(circle at 0% 100%, rgba(162, 111, 230, 1) 13%, rgba(2, 26, 63, 1) 70%); */
+  /* background: linear-gradient(90deg, rgba(3,39,83,1) 0%, rgba(0,212,255,1) 62%, rgba(9,45,121,0.9808298319327731) 88%);
+   */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  
+}
