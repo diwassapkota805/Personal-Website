@@ -4,4 +4,3 @@ export { default as About } from "./About/about";
 export { default as Skill } from "./Skill/skill";
 export { default as Project } from "./Project/project";
 export { default as Contact } from "./Contact/contact";
-export { default as Footer } from "./Footer/footer";

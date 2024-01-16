@@ -15,9 +15,5 @@ a {
 }
 
 .gradient_bg {
-  /* background: radial-gradient(circle at 0% 100%, rgba(162, 111, 230, 1) 13%, rgba(2, 26, 63, 1) 70%); */
-  /* background: linear-gradient(90deg, rgba(3,39,83,1) 0%, rgba(0,212,255,1) 62%, rgba(9,45,121,0.9808298319327731) 88%);
-   */
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  
+  background: linear-gradient(90deg, hsla(219, 74%, 6%, 1) 0%, hsla(220, 69%, 8%, 1) 7%, hsla(221, 66%, 9%, 1) 14%, hsla(221, 64%, 11%, 1) 21%, hsla(221, 61%, 13%, 1) 39%, hsla(219, 59%, 24%, 1) 100%); 
 }

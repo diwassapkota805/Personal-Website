@@ -1,15 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .home {
-    height: 100vh;
-    max-width: 80rem;
-    margin: 3rem auto 0;
+    max-width: 90%;
+    margin: 4rem auto 4rem;
     display: flex;
     font-family: var(--font-family);
+    background-color: rgba(255, 255, 255, 0.05); 
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .home_left {
@@ -17,7 +13,15 @@
     display: flex;
     flex-direction: column;
     color: white;
+    z-index: 1;
+}
 
+.home_left h2 {
+    width: 70%;
+}
+.home_left p {
+    width: 70%;
+    color: var(--color-text);
 }
 
 .home_left h2 {
@@ -27,22 +31,31 @@
     margin-bottom: 1rem;
 }
 
+.home_left {
+    min-width: 50%;
+}
+
 .home_left .text-theme {
-    /* background: linear-gradient(to right, #12c2e9, #f64f59, #f64f59); */
     background: var(--gradient-text);
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block;
 }
 
-/* make the image circular */
+.home_right {
+    z-index: 0;
+}
+
 .home_right img {
     border-radius: 50%;
+    margin: auto;
 }
+
+
+
 
 .home_left .resume {
     color: black;
-    /* background: #FF4820; */
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 1.5rem;
@@ -50,7 +63,7 @@
     border-radius: 1rem;
     border: none;
     width: 10rem;
-    margin-top: 1rem;
+    margin: 2rem 0 1rem 0;
 }
 
 .home_left .resume:hover {
@@ -62,13 +75,11 @@
 }
 
 
-
-/* for mobile responsivemess
- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
     .home {
         flex-direction: column;
         margin-top: 1rem;
+        position: relative;
     }
 
     .home_left {
@@ -83,11 +94,14 @@
 
     .home_right {
         text-align: center;
-        order: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.5;
     }
 
     .home_left .resume {
-        order: -1;
         margin: 1rem auto;
     }
 }

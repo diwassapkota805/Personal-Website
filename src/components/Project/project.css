@@ -1,5 +1,114 @@
-div {
-    width: 100px;
-    height: 100px;
-    background-color: brown;
+.project {
+    max-width: 90%;
+    margin: 0 auto 4rem;
+    font-family: var(--font-family);
+    background-color: rgba(255, 255, 255, 0.05); /* 5% transparency */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    color: var(--text);
 }
+
+.project .project-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    border-radius: 1rem;
+}
+
+.project .project-description a{
+    color: #AE67FA;
+}
+
+.project-list {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.project-item {
+    border-radius: 15px;
+    width: 300px;
+    margin: 40px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.project-item:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.project-item .bg-image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project-item .project-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent background for better readability */
+    opacity: 0; /* Initially hide the details */
+    transition: opacity 0.3s ease; 
+    cursor:auto;
+}
+
+.project-item:hover .project-details {
+    display: flex;
+    opacity: 1;
+}
+
+.project-details .project-details-title {
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.project-details .github-logo {
+    font-size: 2em;
+    color: var(--text);
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .project-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+    .project-item {
+        width: 300px;
+        height: 250px;
+      }
+}
+

@@ -1,9 +1,14 @@
 import React from 'react'
 import './home.css'
-import profile from '../../assets/p.jpeg'
+import profile from '../../assets/profile.png'
 import { IoIosDocument } from 'react-icons/io';
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
 
 const Home = () => {
+  const handleButtonClick = (link) => {
+    window.open(link, "_blank")
+  }
   return (
     <div className='home'>
       <div className="home_left">
@@ -14,18 +19,22 @@ const Home = () => {
             Computer Science Student
           </span>
         </h2>
-        <p>I am a returning student working towards my master's in computer science having just finished my 2nd bachelor's degree with cum laude distinction at Colorado State University. Throughout my studies, I have been focusing on machine learning, artificial intelligence, cybersecurity, and software development. I am currently involve in cyber</p>
+        <p>I am a passionate technology enthusiast pursuing my undergraduate degree in Computer Science at the University of Texas at Arlington. Throughout my academic journey, I have dedicated my focus to cutting-edge fields such as machine learning, artificial intelligence, cybersecurity, and software development. Currently, I am actively seeking internship opportunities to apply my skills in a practical setting and further enhance my learning experience</p>
         <button className="resume">
           <IoIosDocument className='resume_icon'/>
-          <a href="https://drive.google.com/file/d/1RZGJ8V2Q7aXVZK6Zxk7p5rYzV9YwM3Z-/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+          <a href="https://drive.google.com/file/d/1LMuLm86x5lFUgdKcJnjLhEjAySeQh2TW/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
 
         </button>
       </div>
       <div className="home_right">
-        <img src={profile} alt="" />
+        <div className="image-container">
+          <img src={profile} alt="" />
+        </div>
+        
       </div>
     </div>
   )
 }
+
 
 export default Home;

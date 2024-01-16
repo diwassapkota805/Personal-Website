@@ -1,0 +1,90 @@
+
+.education {
+    max-width: 90%;
+    margin: 0 auto 4rem;
+    font-family: var(--font-family);
+    background-color: rgba(255, 255, 255, 0.05); 
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    color: var(--text);
+}
+
+.education .education-title {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    border-radius: 1rem;
+}
+
+.education .education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.education .education-content h5 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.education .education-content p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.education .education-content small {
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: var(--color-text);
+
+}
+
+.experience {
+    max-width: 90%;
+    margin: 0 auto 4rem;
+    font-family: var(--font-family);
+    background-color: rgba(255, 255, 255, 0.05); /* 5% transparency */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.experience .experience-title {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    border-radius: 1rem;
+}
+
+
+.vertical-timeline-element-content .date{
+    color: #AE67FA;
+}

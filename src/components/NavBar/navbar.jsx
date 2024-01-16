@@ -1,46 +1,46 @@
-import React from 'react'
-import './navbar.css';
+import React, { useRef, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { useRef } from 'react';
-
+import { Link } from 'react-scroll';
+import './navbar.css';
 
 const Navbar = () => {
-
   const navRef = useRef();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const showNavBar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  }
+  const toggleNavBar = () => {
+    navRef.current.classList.toggle("navbar-responsive");
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    navRef.current.classList.remove("navbar-responsive");
+    setIsMobileMenuOpen(false);
+  };
 
   return (
-
-    <div className="container">
+    <div className="navbar-container">
       <div className='navbar'>
-        <div className="navbar_logo">
-            D.S
+        <div className="navbar-logo">
+          D.S
         </div>
-        
-        <div className="navbar_desktopMenu" ref={navRef}>
-            <p><a href="#home">Home</a></p>
-            <p><a href="#about">About</a></p>
-            <p><a href="#skill">Skill</a></p>
-            <p><a href="#projects">Project</a></p>
-
-            <button className="navbar_desktopMenu_btn">
-                <a href="#contact">Contact</a>
-            </button>
-            <button className="navbar_btn navbar_close_btn" onClick={showNavBar}>
-              <FaTimes/>
-            </button>
-        </div> 
-        <button className="navbar_btn" onClick={showNavBar}>
-          <FaBars/>
+        <div className="navbar-menu" ref={navRef}>
+          <p><Link activeClass='active' to='home' spy='true' smooth={true} offset={-100} duration={100} className='menu-item' onClick={closeMobileMenu}>Home</Link></p>
+          <p><Link activeClass='active' to='about' spy='true' smooth={true} offset={-100} duration={100} className='menu-item' onClick={closeMobileMenu}>About</Link></p>
+          <p><Link activeClass='active' to='skill' spy='true' smooth={true} offset={-100} duration={100} className='menu-item' onClick={closeMobileMenu}>Skills</Link></p>
+          <p><Link activeClass='active' to='project' spy='true' smooth={true} offset={-100} duration={100} className='menu-item' onClick={closeMobileMenu}>Projects</Link></p>
+          <button className="navbar-menu-btn">
+            <a href="#contact" onClick={closeMobileMenu}>Contact</a>
+          </button>
+          <button className="navbar-btn navbar-close-btn" onClick={toggleNavBar}>
+            <FaTimes />
+          </button>
+        </div>
+        <button className="navbar-btn" onClick={toggleNavBar}>
+          {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
     </div>
-    
-    
-  )
+  );
 }
 
 export default Navbar;

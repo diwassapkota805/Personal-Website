@@ -1,5 +1,62 @@
-div {
-    width: 100px;
-    height: 100px;
-    background-color: brown;
+.skill {
+    max-width: 90%;
+    margin: 0 auto 4rem;
+    font-family: var(--font-family);
+    background-color: rgba(255, 255, 255, 0.05); /* 5% transparency */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    color: white;
+}
+
+.skill .skill-title {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    border-radius: 1rem;
+}
+
+.skill .skill-container {
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill .skill-container .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.skill .skill-container .skill-section p {
+    background:rgba(255, 255, 255, 0.1);
+    color: #AE67FA;
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    text-align: center;
+    width: 10rem;
+    border-radius: 1rem;
+
+}
+
+.skill .skill-container .skill-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
