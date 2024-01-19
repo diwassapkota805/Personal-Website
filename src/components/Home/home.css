@@ -47,8 +47,9 @@
 }
 
 .home_right img {
-    border-radius: 50%;
+    border-radius: 50rem;
     margin: auto;
+    background-color: blue;
 }
 
 
