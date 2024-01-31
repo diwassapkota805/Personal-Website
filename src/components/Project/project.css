@@ -73,7 +73,7 @@
     align-items: center;
     justify-content: center;
     color: var(--color-text);
-    background: rgba(0, 0, 0, 0.9); /* Semi-transparent background for better readability */
+    background: rgba(0, 0, 0, 0.9); 
     opacity: 0; /* Initially hide the details */
     transition: opacity 0.3s ease; 
     cursor:auto;
