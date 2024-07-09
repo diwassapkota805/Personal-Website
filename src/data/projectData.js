@@ -48,7 +48,6 @@ let projects = [
         github_link: "https://github.com/diwassapkota805/Personal_Website",
         image: project6,
     },
-
 ]
 
 export default projects;

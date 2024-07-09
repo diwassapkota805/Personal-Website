@@ -22,7 +22,7 @@ const Home = () => {
         <p>I am a passionate technology enthusiast pursuing my undergraduate degree in Computer Science at the University of Texas at Arlington. Throughout my academic journey, I have dedicated my focus to cutting-edge fields such as machine learning, artificial intelligence, cybersecurity, and software development. Currently, I am actively seeking internship opportunities to apply my skills in a practical setting and further enhance my learning experience</p>
         <button className="resume">
           <IoIosDocument className='resume_icon'/>
-          <a href="https://drive.google.com/file/d/1wTcXyNKQ4aEf1cdPTNBw1hnv7B7Ev9D1/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+          <a href="https://drive.google.com/file/d/1OJQ7ojQ_KPSfZHqLVWUa4zDhl7xuIi-_/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
 
         </button>
       </div>
