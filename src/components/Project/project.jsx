@@ -2,7 +2,6 @@ import React from 'react'
 import './project.css'
 import ProjectItem from '../../smallerComponents/projectItem'
 import  projects from '../../data/projectData'
-import  image  from '../../assets/portfolio.png'
 
 import "./project.css"
 const Project = () => {
