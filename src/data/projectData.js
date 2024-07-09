@@ -1,22 +1,23 @@
-import project1 from "../assets/portfolio.png";
-import project2 from "../assets/tourEZ.png";
+import project1 from "../assets/tourEZ.png";
+import project2 from "../assets/pokeChat.png";
 import project3 from "../assets/hangingManny.png";
 import project4 from "../assets/javaGame.png";
 import project5 from "../assets/fileSystem.png";
+import project6 from "../assets/portfolio.png";
 
 let projects = [
-    {
-        id: 1,
-        title: "portfolio",
-        description: "This is my portfolio website. I built it using React.",
-        github_link: "https://github.com/diwassapkota805/Personal_Website",
-        image: project1,
-    },
     {
         id: 2,
         title: "TourEZ",
         description: "This is a full stack web application to help people plan thier trips. I built it using React, Node.js, Express.js, and MongoDB.",
-        github_link: "",
+        github_link: "https://github.com/diwassapkota805/TourEZ",
+        image: project1,
+    },
+    {
+        id: 2,
+        title: "PokeChat",
+        description: "his web application integrates a chat interface with the GPT-3.5 language model to provide users with information about Pokémon through human-AI interactions."
+        github_link: "https://github.com/diwassapkota805/pokechat?tab=readme-ov-file",
         image: project2,
     },
     {
@@ -39,6 +40,13 @@ let projects = [
         description: "This is my portfolio website. I built it using React.",
         github_link: "https://github.com/diwassapkota805/Personal_Website",
         image: project5,
+    },
+    {
+        id: 6,
+        title: "portfolio",
+        description: "This is my portfolio website. I built it using React.",
+        github_link: "https://github.com/diwassapkota805/Personal_Website",
+        image: project6,
     },
 
 ]

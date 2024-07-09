@@ -15,7 +15,7 @@ const About = () => {
         <div className="education-content">
           <h5>Bachelor in Computer Science Engineering</h5>
           <p>University of Texas at Arlington</p>
-          <small>Expected Graduation Date: May 2025</small>
+          <small>Expected Graduation Date: Dec 2025</small>
         </div>
           
 
