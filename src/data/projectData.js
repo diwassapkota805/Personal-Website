@@ -16,7 +16,7 @@ let projects = [
     {
         id: 2,
         title: "PokeChat",
-        description: "his web application integrates a chat interface with the GPT-3.5 language model to provide users with information about Pokémon through human-AI interactions."
+        description: "his web application integrates a chat interface with the GPT-3.5 language model to provide users with information about Pokémon through human-AI interactions.",
         github_link: "https://github.com/diwassapkota805/pokechat?tab=readme-ov-file",
         image: project2,
     },
